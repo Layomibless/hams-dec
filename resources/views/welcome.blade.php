@@ -56,7 +56,7 @@
 					
 					<!-- Nav item 4 Component-->
 					<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="pages/register.php">Student</a></li>
+					<li class="nav-item"><a class="nav-link" href="/register">Student</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">Admin</a></li>
 				</ul>
 				<!-- Nav Main menu END -->

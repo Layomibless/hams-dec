@@ -4,18 +4,10 @@
 <head>
     <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<meta name="robots" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
-	<meta property="og:title" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
-	<meta property="og:description" content="W3crm:Customer Relationship Management Admin Bootstrap 5 Template">
-	<meta property="og:image" content="https://w3crm.dexignzone.com/xhtml/social-image.png">
-	<meta name="format-detection" content="telephone=no">
-	
-	<title> {{ env("APP_NAME") }} | REGISTER</title>
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+	<title>{{env('APP_NAME')}} | LOGIN</title>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
    <link href="css/style.css" rel="stylesheet">
    <link href="assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
@@ -42,21 +34,17 @@
 				<div class="col-lg-6 col-md-7 col-sm-12 mx-auto align-self-center">
 					<div class="login-form">
 						<div class="text-center">
-							<h3 class="title">Sign up</h3>
-							<p>Sign in to your account to Apply for Hostel</p>
+							<h3 class="title">Sign In</h3>
+							<p>Sign up to your account to Apply for Hostel</p>
 						</div>
-						<form method="post" action="/create_student_profile">@csrf
+						<form method="post">
 							<div class="mb-4">
 								<label class="mb-1 text-dark">Matriculation Number</label>
-								<input type="text" class="form-control form-control" name="matric_no" placeholder="RSG/22/9739" required>
-							</div>
-							<div class="mb-4">
-								<label class="mb-1 text-dark">Email</label>
-								<input type="email" class="form-control form-control" name="email" placeholder="hello@example.com" required>
+								<input type="text" class="form-control form-control"  name="matric_no" placeholder="RSG/22/9739">
 							</div>
 							<div class="mb-4 position-relative">
 								<label class="mb-1 text-dark">Password</label>
-								<input type="password" id="dz-password" name="password" class="form-control" placeholder="**********" required>
+								<input type="password" id="dz-password" name="password" class="form-control" placeholder="*******">
 								<span class="show-pass eye">
 								
 									<i class="fa fa-eye-slash"></i>
@@ -72,11 +60,11 @@
 									</div>
 								</div>
 								<div class="mb-4">
-									<a href="/login" class="btn-link text-primary">Sign in</a>
+									<a href="/register" class="btn-link text-primary">Sign Up</a>
 								</div>
 							</div>
 							<div class="text-center mb-4">
-								<button type="submit" name="register" class="btn btn-primary btn-block">Sign Up</button>
+								<button type="submit" name= login class="btn btn-primary btn-block">Sign In</button>
 							</div>
 						</form>
 					</div>
@@ -89,13 +77,15 @@
 							<p>Hostel Allocation Management System FUTA</p>
 						</div>
 						<div class="login-media text-center">
-							<img src="assets/images/login.png" alt="">
+							<img src="../assets/images/login.png" alt="">
 						</div>
 					</div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 </body>
 </html>
